@@ -7,3 +7,5 @@ This repository provides a ready-to-go Dockerized environment for developing and
 **dbt Engine:** Official dbt-postgres image from dbt Labs
 
 **Persistence:** Docker volumes ensure your data and dbt state survive container restarts.
+
+Note: dbt core is used and not dbt fusion as it is relatively new
