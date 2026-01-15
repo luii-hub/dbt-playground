@@ -4,9 +4,22 @@ jaffle_shop:
       dbname: dbt_db
       host: postgres # name of the postgres service in docker-compose.yml
       user: admin
-      pass: password
+      password: password
       port: 5432
       schema: dbt_db
       threads: 4
       type: postgres
+  target: dev
+
+dbt_fundamentals:
+  outputs:
+    dev:
+      dbname: jaffle_shop
+      host: postgres
+      pass: password
+      port: 5432
+      schema: raw
+      threads: 8
+      type: postgres
+      user: admin
   target: dev
