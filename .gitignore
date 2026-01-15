@@ -16,3 +16,9 @@ profiles.yml
 __pycache__
 
 .vscode
+
+dbt_jaffle_shop/
+dbt_jaffle_shop
+
+dbt_fundamentals/
+dbt_fundamentals
